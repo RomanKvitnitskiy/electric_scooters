@@ -1,0 +1,85 @@
+insert into quality_class (id, name) values (1, 'Premium');
+insert into quality_class (id, name) values (2, 'Middle');
+insert into quality_class (id, name) values (3, 'Low');
+
+insert into user_role (id, name) values (1, 'admin');
+insert into user_role (id, name) values (2, 'user');
+insert into user_role (id, name) values (3, 'manager');
+
+insert into report_status (id, name) values (0, 'Pending');
+insert into report_status (id, name) values (1, 'Rejected');
+insert into report_status (id, name) values (2, 'Returned');
+insert into report_status (id, name) values (3, 'Active');
+insert into report_status (id, name) values (4, 'Closed');
+
+insert into scooters_mark(id, name) values (1, 'Xiaomi');
+insert into scooters_mark(id, name) values (2, 'Scooter');
+insert into scooters_mark(id, name) values (3, 'Crosser');
+insert into scooters_mark(id, name) values (4, 'Dualtron');
+insert into scooters_mark(id, name) values (5, 'Gemix');
+insert into scooters_mark(id, name) values (6, 'Inokim');
+insert into scooters_mark(id, name) values (7, 'Kawasaki');
+insert into scooters_mark(id, name) values (8, 'Kugoo');
+insert into scooters_mark(id, name) values (9, 'Proove');
+insert into scooters_mark(id, name) values (10, 'Segway');
+insert into scooters_mark(id, name) values (11, 'Altair');
+insert into scooters_mark(id, name) values (12, 'Arrow');
+insert into scooters_mark(id, name) values (13, 'Atlas');
+insert into scooters_mark(id, name) values (14, 'Berger');
+insert into scooters_mark(id, name) values (15, 'Bambi');
+insert into scooters_mark(id, name) values (16, 'Tesla');
+insert into scooters_mark(id, name) values (17, 'Ego');
+
+/*Admin*/
+insert into user(login, email, password, user_name, user_surname, role_id, user_status, user_balance)
+                 values ('kvroman', 'kvitn@gmail.com',
+                         'b4b8daf4b8ea9d39568719e1e320076f',
+                         'Roman', 'Kvitn', 1, 1, 000000000.00);
+
+/*User*/
+insert into user(login, email, password, user_name, user_surname, role_id, user_status, user_balance)
+values ('vasilenko', 'vasilenko@gmail.com',
+        'b4b8daf4b8ea9d39568719e1e320076f',
+        'Tonya', 'Vasilenko', 2, 1, 000009990.00);
+
+/*Manager*/
+insert into user(login, email, password, user_name, user_surname, role_id, user_status, user_balance)
+values ('alopovna', 'alopovna@gmail.com',
+        'b4b8daf4b8ea9d39568719e1e320076f',
+        'Nadia', 'Alopovna', 3, 1, 000000000.00);
+
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('VT1 Black', 31.00, 1, 16, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Tesla 8500', 40.00, 1, 16, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Tesla 2400', 35.00, 2, 16, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('ES 2-005', 15.00, 2, 15, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('ES 2-001', 15.00, 2, 15, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('XM-04', 20.00, 1, 14, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('XS-03B', 21.00, 1, 14, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Atlas Classic White', 50.00, 1, 13, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('ES-125 Grey', 30.00, 1, 12, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('ES-60 Black', 28.00, 1, 12, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('ES PRO Smart', 38.00, 1, 11, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Ninebot E25E Dark Grey', 38.00, 1, 10, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Ninebot MAX G30 II Black', 70.00, 1, 10, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Ninebot E8 Blue', 20.00, 2, 10, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('S3 PRO Original', 32.00, 1, 8, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('M5 Plus 21Ah Black', 37.00, 1, 8, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('M365 PRO Black', 10.00, 2, 8, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('S1 Plus', 15.00, 2, 8, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Kids Blue', 7.00, 2, 9, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('X-City Pro Black Red', 27.00, 1, 9, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('KX-FS6.5A', 56.00, 1, 7, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('KX-FSKID5.5', 55.00, 1, 7, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('OX SUPER', 73.00, 1, 6, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Quick4', 75.00, 1, 6, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('LIGHT2 SUPER', 60.00, 1, 6, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('GM18 Back', 17.00, 2, 5, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('GM6 Dark Grey', 17.00, 2, 5, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Thunder', 33.00, 1, 4, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Eagle PRO', 90.00, 1, 4, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('E9 Premium', 44.00, 1, 3, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('T4 Seat', 35.00, 1, 3, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('M100', 5.00, 2, 2, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('R100 plus', 10.00, 2, 2, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Mi Essential Black', 17.00, 2, 1, 1);
+insert into scooters (scooters_name, scooters_cost, class_id, mark_id, scooters_status) values ('Mi Pro 2 Black', 60.00, 1, 1, 1);
